@@ -1,5 +1,3 @@
-import { useSelector } from 'react-redux';
-import { RootState } from '../store/index';
 import styled from 'styled-components';
 import Item from './Item';
 import useListFilter from '../hooks/useListFilter';
@@ -14,13 +12,20 @@ const List = styled.div`
     flex-grow: 1;
 `;
 
+const NoItems = styled.h3`
+    color: #fff;
+`;
+
 
 
 const ItemsList = () => {
     const filteredList = useListFilter()
     return (
         <List>
-            {filteredList.map((item, i) => <Item key={i} item={item} />)}
+            {filteredList.length > 0
+                ? filteredList.map((item, i) => <Item key={i} item={item} />)
+                : <NoItems>No items</NoItems>
+            }
         </List>
     )
 }
