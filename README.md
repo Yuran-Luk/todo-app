@@ -1,6 +1,6 @@
 # GitHub Pages
 
-Try [TODO APP](https://github.com/facebook/create-react-app) on GitHub Pages.
+Try [TODO APP](https://yuran-luk.github.io/todo-app/) on GitHub Pages.
 
 # Getting Started with Create React App
 
