@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# GitHub Pages
 
 Try [TODO APP](https://github.com/facebook/create-react-app) on GitHub Pages.
 
